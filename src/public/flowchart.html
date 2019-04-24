@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <link rel="stylesheet" type="text/css" media="screen" href="main.css"> -->
+    <!-- <script src="main.js"></script> -->
+    <style>
+        body{
+            padding: 1px;
+        }
+        .node-wrap{
+            display: flex;
+            padding:0 20px;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            position: relative;
+        }
+        .node{
+            width: 220px;
+            min-height: 75px;
+            background: rgb(87, 106, 149);
+            z-index: 20;
+        }
+        .add-node-btn{
+            width: 220px;
+            height: 82px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+        .add-icon{
+            width: 30px;
+            height: 30px;
+            background-color: #3296fa;
+            border-radius: 50%;
+            line-height: 30px;
+            text-align: center;
+            z-index: 20;
+        }
+        .line{
+            display: block;
+            position: absolute;
+            width: 2px;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            background-color: #cacaca; 
+            margin: auto;
+            z-index: 10;
+        }
+        .branch-box{
+            display: inline-flex;
+            border-top: 2px solid #ccc;
+            border-bottom: 2px solid #ccc;
+            justify-content: center;
+        }
+        .branch-box-wrap{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        .col-box{
+            display: flex;
+            justify-content: center;
+            position: relative;
+        }
+        .inner-node{
+            margin-top: 20px;
+        }
+        .top-left-cover-line{
+            width: 50%;
+            background-color: white;
+            height: 3px;
+            position: absolute;
+            top: -2px;
+            left: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="node-wrap">
+            <div class="node">
+                
+            </div>
+            <div class="line"></div>
+            <div class="add-node-btn">
+                
+                <span class="add-icon">
+                    +
+                </span>
+            </div>
+        </div>
+        <div class="branch-box-wrap">
+            <div class="branch-box">
+                <div class="col-box">
+                        <div class="top-left-cover-line"></div>
+
+                        <div class="node-wrap">
+                                <div class="line"></div>
+
+                                <div class="node inner-node">
+                                    
+                                </div>
+                                <div class="add-node-btn">
+                                    <span class="add-icon">
+                                        +
+                                    </span>
+                                </div>
+                            </div>
+                </div>
+                <div class="col-box">
+                        <div class="top-left-cover-line"></div>
+
+                        <div class="node-wrap">
+                                <div class="line"></div>
+
+                                <div class="node inner-node">
+                                    
+                                </div>
+                                <div class="add-node-btn">
+                                    <span class="add-icon">
+                                        +
+                                    </span>
+                                </div>
+                            </div>
+                </div>
+                <div class="col-box">
+                        <div class="node-wrap">
+                                <div class="line"></div>
+
+                                <div class="node inner-node">
+                                    
+                                </div>
+                                <div class="add-node-btn">
+                                    <span class="add-icon">
+                                        +
+                                    </span>
+                                </div>
+                            </div>
+                </div>
+            </div>
+            <div class="add-node-btn">
+                <div class="line"></div>
+                    <span class="add-icon">
+                            +
+                        </span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

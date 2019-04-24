@@ -1,0 +1,18 @@
+{
+    "value": "发起审批",
+    "type": "start",
+    "children": [
+        {
+            "value": "条件1",
+            "type": "condition",
+            "children": [
+                {
+                    "value": "流程1"
+                },
+                {
+                    "value": "流程2"
+                }
+            ]
+        }
+    ]
+}

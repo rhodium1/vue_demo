@@ -9,18 +9,28 @@
   },
   "dependencies": {
     "core-js": "^2.6.5",
+    "dagre-d3": "^0.6.3",
+    "echarts": "^4.2.1",
     "element-ui": "^2.7.2",
+    "flowchart.js": "^1.11.3",
+    "jointjs": "^2.2.1",
     "vue": "^2.6.6",
+    "vue-property-decorator": "^8.1.0",
     "vue-router": "^3.0.2",
     "vuex": "^3.1.0"
   },
   "devDependencies": {
+    "@vue/babel-helper-vue-jsx-merge-props": "^1.0.0-beta.3",
+    "@vue/babel-preset-jsx": "^1.0.0-beta.3",
     "@vue/cli-plugin-babel": "^3.5.0",
     "@vue/cli-plugin-eslint": "^3.5.0",
     "@vue/cli-service": "^3.5.0",
     "babel-eslint": "^10.0.1",
+    "babel-loader": "^8.0.5",
     "eslint": "^5.8.0",
     "eslint-plugin-vue": "^5.0.0",
+    "ts-loader": "^5.3.3",
+    "typescript": "^3.4.4",
     "vue-template-compiler": "^2.5.21"
   },
   "eslintConfig": {

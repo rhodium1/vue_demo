@@ -1,18 +1,22 @@
 <template>
-<label>baseinput
-    <input type="text" v-on='inputListeners'/>
+<label>{{todos}}
+    <input type="text" @input='inputHandler'/>
 </label>
 </template>
 
 <script>
 export default{
+    props:['todos'],
     computed:{
-        inputListeners(){
-            let vm = this;
-            console.log('computing');
-            return Object.assign({}, vm.$listeners, {input(e){
-                vm.$emit('input', e.target.value);
-            }})
+        
+    },
+    model:{
+        prop:'todos',
+        event:"update-todos"
+    },
+    methods:{
+        inputHandler(e){
+            this.$emit('update-todos', e.target.value);
         }
     }
 }

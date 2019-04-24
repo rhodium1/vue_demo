@@ -1,21 +1,30 @@
 import Vue from 'vue';
 import VueRouter from 'vue-router';
-import Home from './components/home';
-import pageA from './components/pageA';
-import pageB from './components/pageB';
+import Home from './views/Crm';
+import DynamicTitle from './components/DynamicTitle';
 Vue.use(VueRouter);
 const routes = [
     {
         path: '/', component: Home, children:[
-            { path: '/pageB', component: pageB },
-            {  path:'/pageA', component: pageA},
+            { 
+                path: '/crm-manager', 
+                component: DynamicTitle ,
+                meta:{
+                    title: "crm管理"
+                },
+                
+            },
+            {
+                path: "public-project",
+                component: DynamicTitle,
+                meta:{
+                    title: '公海池'
+                }
+            },
         ],
         meta:{
-            data:'data'
+            title: "Home"
         }
-    },
-    {
-        path:'/foo', component:pageA
     },
     
 ];
